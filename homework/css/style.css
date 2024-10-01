@@ -1,0 +1,249 @@
+*{
+   margin: 0;
+}
+
+.bee__section{
+    background-color: burlywood;
+    width: 100%;
+    height: 50vh;
+}
+
+.body{
+    height: 80px;
+    width: 160px;
+    background: #EFF33C;
+    border-radius: 80px;
+    left: 125px;
+    top: 150px;
+    position: relative;
+    overflow: hidden;
+    z-index: 2;
+}
+
+.bee__eye{
+    height: 15px;
+    width: 15px;
+    background: black;
+    border-radius: 50%;
+    left: 115px;
+    top: 20px;
+    position: absolute;
+}
+
+.line{
+    height: 80px;
+    width: 25px;
+    background: black;
+    box-shadow: 35px 0 black, 70px 0 black;
+    position: absolute;
+}
+
+.wings {
+    height: 75px;
+    width: 75px;
+    background: #fff;
+    border-radius: 75px;
+    left: 125px;
+    top: 75px;
+    position: absolute;
+    box-shadow: 35px 35px white, 75px 0 white;
+    transition: all 0.8s ease-in-out;
+}
+
+@keyframes fly {
+    0% { transform: translateY(50px); }
+    50% { transform: translateY(0px); }
+    100% { transform: translateY(50px); }
+}
+
+.bee__section:hover .body {
+    transform: translateX(80px) rotate(10deg);
+}
+
+.bee__section:hover .wings {
+    animation: fly 0.8s infinite ease-in-out;
+}
+
+
+.square-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100%;
+    background-color: #6AAFE6;
+}
+
+.outer-square {
+    width: 250px;
+    height: 250px;
+    background-color: #0B3D91;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: transform 0.5s ease;
+}
+
+.middle-square {
+    width: 150px;
+    height: 150px;
+    background-color: #6AAFE6;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform: rotate(45deg);
+    transition: transform 0.5s ease;
+}
+
+.inner-square {
+    width: 70px;
+    height: 70px;
+    background-color: #0B3D91;
+    transform: rotate(-45deg);
+}
+
+.square-section:hover .outer-square {
+    transform: rotate(360deg);
+}
+
+.square-section:hover .middle-square {
+    transform: rotate(90deg);
+}
+.section__ayes {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: #6592CF;
+}
+
+div {
+    height: 60px;
+    overflow: hidden;
+    position: absolute;
+}
+
+p {
+    background: #005F55;
+    height: 120px;
+    width: 120px;
+    border-radius: 50%;
+}
+
+p::after {
+    content: '';
+    position: absolute;
+    background: #6592CF;
+    height: 80px;
+    width: 80px;
+    border-radius: 50%;
+    margin: 20px;
+}
+
+.eyes__firs{
+    transform: translate(-100px, -80px);
+}
+
+.eyes__second{
+    transform: rotate(180deg) translateY(-100px);
+}
+
+.mouz{
+    transform: translate(100px, -80px); 
+}
+
+
+
+.tessarc{
+    background-color: #222730;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    position: relative;
+}
+
+.circle{
+    width: 50px;
+    height: 50px;
+    background: #393E46;
+    border-radius: 50%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50% , -50%);
+}
+
+.rectangle{
+    width: 250px;
+    height: 250px;
+    background: #4caab3;
+    transform: rotate(45deg);
+    position: absolute;
+}
+.rectangle2{
+    width: 350px;
+    height: 350px;
+    background: #222730;
+    transform: rotate(45deg);
+    position: absolute;
+}
+
+.contianer{
+    width: 550px;
+    height: 250px;
+    background: #4caab3;
+    position: absolute;
+}
+
+
+.push__buttom{
+    background-color: #6592CF;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    position: relative;
+}
+
+.background__rect{
+    width: 300px;
+    height: 150px;
+    position: absolute;
+    top: 75px;
+    left: 50px;
+    background: #243D83;
+}
+
+.background__circle{
+    background: #6592CF;
+    position: absolute;
+    width: 250px;
+    height: 250px;
+    left: 75px;
+    top: 25px;
+    border-radius: 100%;
+}
+.middle__circle{
+    background: #243D83;
+    position: absolute;
+    width: 150px;
+    height: 150px;
+    left: 130px;
+    top: 75px;
+    border-radius: 100%;
+}
+.center__circle{
+    background: yellow;
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    left: 180px;
+    top: 125px;
+    border-radius: 100%;
+}
+
